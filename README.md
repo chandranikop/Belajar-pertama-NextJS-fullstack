@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Learn Next.js Fullstack using Google-Gemini 🚀
 
-## Getting Started
+This project is a practical exploration of **Next.js 14 (App Router)**, demonstrating how to build a modern full-stack application with server-side logic and database integration.
 
-First, run the development server:
+It serves as a proof-of-concept for handling data mutations directly from the frontend using the latest React Server Actions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Server Actions:** Handles form submissions (POST) and deletions (DELETE) directly on the server without creating separate API endpoints.
+- **Database Integration:** Uses **Prisma ORM** with **SQLite** to store guestbook messages permanently.
+- **Full CRUD Functionality:** Users can Create, Read, and Delete messages securely.
+- **Hybrid Rendering:** A seamless mix of Server Components (for performance/SEO) and Client Components (for interactivity like the "Like" button).
+- **Optimized UX:** Includes real-time loading states (`useFormStatus`) and input validation.
+- **Dynamic Routing:** Blog system implementation using dynamic slugs.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** Next.js 14 (App Router)
+- **Language:** JavaScript / React
+- **Styling:** Tailwind CSS
+- **Database:** SQLite via Prisma ORM
 
-## Learn More
+## 🤝 Credits
 
-To learn more about Next.js, take a look at the following resources:
+This project was built for educational purposes to master modern web development concepts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **AI Mentor:** **Gemini (Google)** – _Provided guidance on best practices for Next.js Server Actions, Prisma architecture, and debugging._
