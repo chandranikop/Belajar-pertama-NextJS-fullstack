@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import LikeButton from "../../../../components/LikeButton";
 
 export async function generateMetadata({ params }) {
@@ -28,18 +29,18 @@ const BlogPost = async ({ params }) => {
     return (
       <div className="p-10">
         <div className="text-red-500 font-bold">Artikel tidak ditemukan!</div>
-        <a href="/blog" className="text-blue-500 mb-4 inline-block">
+        <Link href="/blog" className="text-blue-500 mb-4 inline-block">
           &larr; Kembali
-        </a>
+        </Link>
       </div>
     );
   }
 
   return (
     <div className="p-10  max-w-2xl">
-      <a href="/blog" className="text-blue-500 mb-4 inline-block">
+      <Link href="/blog" className="text-blue-500 mb-4 inline-block">
         &larr; Kembali
-      </a>
+      </Link>
       <h1 className="text-4xl font-bold capitalize mb-4">{post.title}</h1>
 
       <p className="text-gray-700 leading-relaxed text-lg border-l-4 border-blue-500 pl-4">
